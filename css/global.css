@@ -1,0 +1,5 @@
+html { font-size: 62.5%; }
+body { font-size: 18px; }
+
+/* Typhography */
+body * { font-family: 'Noto Sans KR', sans-serif; box-sizing: border-box; font-size: 2rem; line-height: 1.5; }
