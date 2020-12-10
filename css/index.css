@@ -1,0 +1,108 @@
+/* HEADER */
+header .inner {
+    width: 98rem;
+    margin: 0 auto;
+}
+
+header .inner .header--top {
+    display: flex;
+    padding: 2rem 0;
+    align-items: center;
+}
+
+header .inner .header--top h1 {
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-right: auto;
+    padding: 1rem .5rem;
+}
+
+header .inner .header--top .right--links a {
+    font-size: 1.8rem;
+    color: #222;
+    font-weight: 400;
+}
+
+header .inner .header--top .right--links a:first-child {
+    margin-right: 1rem;
+}
+
+header .inner .header--top .right--links a:first-child::after {
+    content: "|";
+    display: inline-block;
+    margin-left: 1.5rem;
+}
+
+/* NAV */
+header .inner .header--nav {
+    border: 1px solid red;
+}
+
+header .inner .header--nav .nav-wrapper {
+    display: flex;
+
+}
+
+header .inner .header--nav .nav-wrapper li h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem 0 2.5rem;
+    margin-right: 3rem;
+    border-bottom: .5rem solid #fff;
+}
+
+header .inner .header--nav .nav-wrapper li h2:last-child {
+    margin-right: 0;
+}
+
+header .inner .header--nav .nav-wrapper li h2:hover {
+    border-bottom: .5rem solid #000;
+}
+
+header .sub-menu-dropdown {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    column-gap: 2rem;
+    width: 100vw;
+    background: #fff;
+    position: absolute;
+    z-index: 1;
+    padding: 3rem 0;
+    border: 1px solid green;
+}
+
+header .inner .header--nav .nav-wrapper:hover header .sub-menu-dropdown {
+    display: flex;
+}
+
+header .sub-menu-dropdown .left-sub-menu-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10.5rem;
+    grid-column: 3/4;
+}
+
+header .sub-menu-dropdown .left-sub-menu-title strong {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #888;
+    margin-bottom: 5rem;
+}
+
+header .sub-menu-dropdown .left-sub-menu-title p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #888;
+    letter-spacing: .25rem;
+}
+
+header .sub-menu-dropdown ul:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+header .sub-menu-dropdown ul:last-child {
+    display: flex;
+    flex-direction: column;
+}
